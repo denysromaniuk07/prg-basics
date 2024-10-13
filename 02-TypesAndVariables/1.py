@@ -1,4 +1,4 @@
-###
+### 3.2
 # A program that calculates the sum of two numbers.
 # Modify the program to calculate the sum of three numbers.
 
@@ -11,6 +11,7 @@
 # print('Number 3: ', number3)
 # print('The result of summation: ', result)
 
+# 3.3
 # A program for swapping two varable values
 #
 # x = 7
@@ -18,7 +19,7 @@
 # z = 0 # additional, auxiliary variable
 # print("Before swapping: x=", x, "y=", y)
 
-# # swap the values
+# swap the values
 
 # x = y
 # y = z
@@ -27,7 +28,7 @@
 # print("After swapping: x=", x, "y=", y)
 
 
-###
+### 3.4
 # A program that, for a given speed in km/h,
 # prints the speed in m/s
 #
@@ -37,7 +38,7 @@
 # print(speed_kmh, "km/h = ", speed_ms, "m/s")
 
 
-###
+### 3.5
 # A program that calculates the length of the diagonal
 # of a rectangle with sides a and b.
 #
@@ -47,7 +48,12 @@
 # diagonal = math.sqrt(a**2+b**2)
 # print(diagonal)
 
-###
+### 3.6
+
+
+
+
+### 3.7
 # A program that calculates and prints:
 # - the number of people and percentage of the total
 #   population living in the Northern Hemisphere
@@ -55,10 +61,11 @@
 #   population living in the Southern Hemisphere
 #
 
-total = 8000000000
-north = 7200000000
-south = total-north
-print("World population: ", total)
-print("Northern Hemisphere: ", north)
-print("Northern Hemisphere in %: ", north/total*100)
-print (south)
+# total = 8000000000
+# north = 7200000000
+# south = total-north
+# print("World population: ", total)
+# print("Northern Hemisphere: ", north)
+# print("Northern Hemisphere in %: ", north/total*100)
+# print("Southern Hemisphere: ", south)
+# print("Southern Hemisphere in %: ", south / total * 100)
