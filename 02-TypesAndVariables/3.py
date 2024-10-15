@@ -1,3 +1,5 @@
+################## Variables 
+
 ### 3.2
 # A program that calculates the sum of two numbers.
 # Modify the program to calculate the sum of three numbers.

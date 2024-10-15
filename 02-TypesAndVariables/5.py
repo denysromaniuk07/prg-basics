@@ -1,3 +1,5 @@
+##############      Data Input
+
 ### 5.1
 # A program that reads your first and last name from the keyboard.
 # Store this data in two separate variables.

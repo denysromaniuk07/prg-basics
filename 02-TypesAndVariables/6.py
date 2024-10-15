@@ -1,3 +1,5 @@
+#######          String Operations
+
 ### 6.1
 # A program that calculates the number of characters
 # of your name, surname and full name
