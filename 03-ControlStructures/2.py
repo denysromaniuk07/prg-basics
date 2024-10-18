@@ -39,21 +39,53 @@
 # total_consumption = (distance/100)*fuel_consumption
 # print(f'Total fuel consumption over a distance of {distance} km in driving mode {driving_mode} is {total_consumption} liters')
 
-###
+###2.4
 # Simple calculator
 # Asks the user to enter a symbol of mathematical operation (+, -, *, /)
 # and two numbers. The program should perform the appropriate
 # mathematical operation on the given numbers and return the result.   
 
-number1 = input("Enter first number: ")
-number2 = input ("Enter second number: ")
-operator = input ("Enter third operator: ")
+# number1 = int(input("Enter first number: "))
+# number2 = int(input ("Enter second number: "))
+# operator = input ("Enter woperator: ")
 
-if operator == '+':
-    result = number1 + number2
-elif ...
-...
-...
+# if operator == '+':
+#     result = number1 + number2
+# elif operator == '-':
+#     result = number1 - number2 
+# elif operator == '*':
+#     result = number1*number2
+# elif operator == '/':
+#     result = number1/number2
 
-# print result
-print(f'{number1} {operator} {number2} = {result}')
+# # print result
+# print(f'{number1} {operator} {number2} = {result}')
+
+###2.5
+# Calculates and prints the quarter of the year for a given
+# month number (1..12)
+#
+# month = int(input('Enter month number (1..12): '))
+
+# if month >= 10:
+#     quarter = 4
+# elif month >=7:
+#     quarter = 3
+# elif month >=4:
+#     quarter = 2
+# else:
+#     quarter = 1
+
+# print(f'Month {month} is in quarter {quarter}')
+
+### 2.6
+
+# number = int(input("Enter number: "))
+
+# if number < 0:
+#     print("negative")
+# elif number > 0:
+#     print("positive")
+# else: 
+#     print("Number is 0")
+
