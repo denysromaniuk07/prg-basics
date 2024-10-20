@@ -72,6 +72,32 @@
 
 # print(f"The dog's age in dog's years is {dog_years} years.")
 
-### 6.11
+### 6.11 
 
+# price = int(input("Enter previous price: "))
+# curent_price = int(input("Enter present price: "))
 
+# percent = ((price - curent_price) / price) * 100
+
+# print(f"Current product price: ")
+# print(f"Previous product price: ")
+
+# if percent >= 10:
+#     print(f"Buy product!!!")
+#     print(f"Product price reduced by: {percent}%")
+# else: 
+#     print("Don't buy")
+
+### 6.12
+
+number_p = int(input("Enter number of products: "))
+price = int(input("Enter product price: "))
+
+if number_p <= 2:
+    amount_to_pay = number_p * price
+else:
+    amount_to_pay = (2 * price) + ((number_p - 2) * price * 0.75)
+
+print(f"Number of products purchased: {number_p}")
+print(f"Product price: {price}")
+print(f"Amount to pay: {amount_to_pay}")
