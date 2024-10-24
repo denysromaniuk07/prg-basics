@@ -299,6 +299,78 @@
 #     for j in range(i):
 #         print(i, end="")
 #     print()
+
 ### 6.26
+
+# pin = '0805'
+# mistake =0
+
+# while mistake <3:
+#     user = input("Enter pin code: ")
+#     if pin == user:
+#         print("Correct")
+#     else:
+#         print("Incorrect...")
+#         mistake= mistake + 1
+# print("Sorry, your payment card has been blocked.")
+
 ### 6.27
+# for i in range(6,-1,-3):
+#     for j in range(1,4):
+#         print(f'{i+j}',end=' ')
+#     print()
+# print()  
+# i = 6
+# while i > -1:
+#     j = 1
+#     while j < 4:
+#         print(f'{i+j}', end=' ')
+#         j += 1
+#     print()
+#     i -= 3
+
+### 6.28
+
+# n_terms = 20
+# n1, n2 = 0, 1
+# count = 0
+
+# print("Fibonacci sequence:")
+# while count < n_terms:
+#     print(n1, end=' ')
+#     nth = n1 + n2
+#     n1 = n2
+#     n2 = nth
+#     count += 1
+# print()
+
+### 6.29
+
+# number = int(input("Enter number: "))
+# prime = True
+# if number <= 1:
+#     prime = False
+# elif number == 2 or number == 3:
+#     prime = True
+# else:
+#     for i in range (2,3):
+#         if number % i == 0:
+#             prime = False
+        
+# print(prime)
+
+### 6.30
+
+# for i in range (7):
+#     for j in range(7):
+#         print(i+1+j*7, end=" ")
+#     print()
+
+### 6.31
+
+# import random
+
+# for i in range(20):
+#     a = random.randint(5,11)
+#     print(a)
 
