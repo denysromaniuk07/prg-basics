@@ -90,14 +90,215 @@
 
 ### 6.12
 
-number_p = int(input("Enter number of products: "))
-price = int(input("Enter product price: "))
+# number_p = int(input("Enter number of products: "))
+# price = int(input("Enter product price: "))
 
-if number_p <= 2:
-    amount_to_pay = number_p * price
-else:
-    amount_to_pay = (2 * price) + ((number_p - 2) * price * 0.75)
+# if number_p <= 2:
+#     amount_to_pay = number_p * price
+# else:
+#     amount_to_pay = (2 * price) + ((number_p - 2) * price * 0.75)
 
-print(f"Number of products purchased: {number_p}")
-print(f"Product price: {price}")
-print(f"Amount to pay: {amount_to_pay}")
+# print(f"Number of products purchased: {number_p}")
+# print(f"Product price: {price}")
+# print(f"Amount to pay: {amount_to_pay}")
+
+### 6.13
+
+# car_speed = int(input("Enter speed: "))
+# speed_limit_min = 40
+# speed_limit_max = 140
+
+# if car_speed <40 or car_speed > 140:
+#     print("Warning: invalid car speed!!")
+# else: 
+#     print("Valid spped")
+
+### 6.14
+
+# facebook = True
+# twiter = False
+# instagram = True
+
+# if (facebook + twiter + instagram) >= 2:
+#     print("You are good influencer!")
+
+### 6.15
+
+# number = input("Enter EAN-13 article number: ")
+# if len(number) == 13 and number.isdigit():
+#     print("Article number is correct")
+
+#     if number.startswith("590"):
+#         print("Article manufactured in Poland")
+# else: 
+#     print("Article number is uncorrect")
+
+### 6.16
+
+# Calculates and prints the total washing time.
+#
+# A washing machine allows you to wash a jacket, which takes
+# 40 minutes, wash underwear, which takes 70 minutes, and wash shoes,
+# which takes 20 minutes. In addition, it is possible to program
+# an additional rinse (15 minutes) and an additional spin (9 minutes).
+#
+# total_washing_time = 0
+
+# program = input('Select washing program: (j)acket, (u)nderwear, (s)hoes: ').lower()
+# extra_rinse = input('Extra rinse? (y/n): ').lower()
+# extra_spin = input('Extra spin? (y/n): ').lower()
+
+# if program == 'j':
+#     total_washing_time = 40
+# elif program == 'u':
+#     total_washing_time = 70
+# elif program == 's':
+#     total_washing_time = 20
+# else:
+#     print("Invalid program selected")
+
+# if extra_rinse == 'y':
+#     total_washing_time += 15
+
+# if extra_spin == 'y':
+#     total_washing_time += 9
+
+# if total_washing_time > 0:
+#     print(f"Total washing time: {total_washing_time} minutes")
+# else:
+#     print("Please select a valid washing program")
+
+### 6.17
+
+# hour24 = input("Enter hour in 24-hours format: ")
+
+# hours, minutes = map(int, hour24.split(':'))
+
+# if hours >= 12:
+#     period = "pm"
+#     if hours > 12:
+#         hours = hours - 12
+#     else: 
+#         hours = 12
+# else:
+#     period = 'am'
+#     if hours == 0:
+#         hours = 12
+#     else: hours
+
+# print(f"Time in 12-hour format: {hours}:{minutes}{period}")
+
+### 6.18
+
+# x = 5
+# y = 2
+
+# if x > 0 and y > 0:
+#     print(f"Point P({x},{y}) is in the first quadrant of the coordinate system")
+# elif x < 0 and y > 0:
+#     print(f"Point P({x},{y}) is in the second quadrant of the coordinate system")
+# elif x < 0 and y < 0:
+#     print(f"Point P({x},{y}) is in the third quadrant of the coordinate system")
+# elif x > 0 and y < 0:
+#     print(f"Point P({x},{y}) is in the fourth quadrant of the coordinate system")
+# elif x == 0 and y != 0:
+#     print(f"Point P({x},{y}) is on the Y-axis")
+# elif x != 0 and y == 0:
+#     print(f"Point P({x},{y}) is on the X-axis")
+# else:
+#     print(f"Point P({x},{y}) is at the origin (0,0) of the coordinate system")
+
+### 6.19
+
+# Print the survey
+# print("SURVEY")
+
+# interest_cs = input("Are you interested in computer science? (y/n): ").lower() == 'y'
+# play_games = input("Do you like playing computer games? (y/n): ").lower() == 'n'
+# instagram_account = input("Do you have an Instagram account? (y/n): ").lower() == 'y'
+
+# print("\nSURVEY RESULTS")
+# print(f"Interested in computer science: {'Yes' if interest_cs else 'No'}")
+# print(f"Playing computer games: {'No' if play_games else 'Yes'}")
+# print(f"Has an Instagram account: {'Yes' if instagram_account else 'No'}")
+
+### 6.20
+
+# decimal_number = int(input("Enter decimal number: "))
+# binary_num = []
+
+# n = decimal_number
+# while n > 0:
+#     remainder = n % 2
+#     binary_num.append(remainder)
+#     n = n // 2
+
+# binary_num.reverse()
+# binary_str = ''.join(map(str, binary_num))
+
+# print(f"{decimal_number}(10) = {binary_str}(2)")
+
+### 6.21
+
+# amount = int(input("Enter the amount in PLN: "))
+
+# coin5 = 0
+# coin2 = 0
+# coin1 = 0
+
+# while amount > 0:
+#     if amount >= 5:
+#         coin5 += 1
+#         amount -= 5
+#     elif amount >=2:
+#         coin2 += 1
+#         amount -=2
+#     else:
+#         coin1 += 1
+#         amount -=1
+
+# print(f"The amount of PLN {amount} in coins")
+# print(f"5 PLN coins: {coin5}")
+# print(f"2 PLN coins: {coin2}")
+# print(f"5 PLN coins: {coin1}")
+
+### 6.22
+
+# for number in range(1,31):
+#     if number % 3 == 0 and number % 5==0:
+#         print("Bingo", end=" ")
+#     elif number % 3 == 0:
+#         print("THREE", end= " ")
+#     elif number % 5 == 0:
+#         print("FIVE", end=" ")
+#     else: 
+#         print(number, end=" ")
+
+### 6.23
+
+# number = int(input("Enter number: "))
+
+# for i in range (1,10):
+#     m = number * i
+#     print(f"{number} x {i} = {m}")
+
+### 6.24
+# s=""
+
+# for i in range(1,6):
+#     if i>=1 and i<=5:
+#         s+="*"
+#         print(s)
+# for i in range(4,0,-1):
+#     s="*"*i
+#     print(s)
+      
+### 6.25
+
+# for i in range (1,10):
+#     for j in range(i):
+#         print(i, end="")
+#     print()
+### 6.26
+### 6.27
+
