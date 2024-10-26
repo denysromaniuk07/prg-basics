@@ -283,15 +283,15 @@
 #     print(f"{number} x {i} = {m}")
 
 ### 6.24
-# s=""
+s=""
 
-# for i in range(1,6):
-#     if i>=1 and i<=5:
-#         s+="*"
-#         print(s)
-# for i in range(4,0,-1):
-#     s="*"*i
-#     print(s)
+for i in range(1,6):
+    # if i>=1 and i<=5:
+        s+="*"
+        print(s)
+for i in range(4,0,-1):
+    s="*"*i
+    print(s)
       
 ### 6.25
 
