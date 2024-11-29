@@ -184,18 +184,50 @@
 
 ###7.15
 
+# def f(n):
+#     if n == 1:
+#         return 0
+#     elif n == 2:
+#         return 1 
+#     else: 
+#         return f(n-1) + f(n-2)
+        
+        
+# print(f(3))
+
+# def f(n):
+#     if n == 1:
+#         return False
+#     elif n == 3 or n == 2: 
+#         return True
+#     elif n % 2 == 0 or n % 3 == 0:
+#         return False
+#     else:
+#         return True
+
+# print(f(11))
+# print(f(16))
+
+
 def f(n):
-    n_terms = 20
-    n1, n2 = 0, 1
-    count = 0
+    count = 0  # Лічильник для простих чисел
+    num = 1    # Початкове число для перевірки
+    
+    # Знаходимо n-те просте число
+    while count < n:
+        num += 1
+        is_prime = True
+        i = 2
+        # Перевіряємо, чи є num простим числом
+        while i * i <= num:
+            if num % i == 0:
+                is_prime = False
+                break
+            i += 1
+        # Якщо число просте, збільшуємо лічильник
+        if is_prime:
+            count += 1
+            
+    return num
 
-    print("Fibonacci sequence:")
-    while count < n_terms:
-        print(n1, end=' ')
-        nth = n1 + n2
-        n1 = n2
-        n2 = nth   
-        count += 1
-    print()
-
-print(5)
+print(f(2))
