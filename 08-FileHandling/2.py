@@ -1,33 +1,39 @@
 ###2.1
 # Program to write movie details to a text file
 
-movie_title = "Inception"
-director = "Christopher Nolan"
-lead_actor = "Leonardo DiCaprio"
+# movie_title = "Inception"
+# director = "Christopher Nolan"
+# lead_actor = "Leonardo DiCaprio"
 
-file_name = 'movie_details.txt'
+# file_name = 'movie_details.txt'
 
-with open(file_name, 'w') as file:
-   file.write(f"Movie Title: {movie_title}\n")
-   file.write(f"Director: {director}\n")
-   file.write(f"Lead Actor: {lead_actor}\n")
+# with open(file_name, 'w') as file:
+#    file.write(f"Movie Title: {movie_title}\n")
+#    file.write(f"Director: {director}\n")
+#    file.write(f"Lead Actor: {lead_actor}\n")
 
-print(f"Movie details have been written to {file_name}.")
+# print(f"Movie details have been written to {file_name}.")
 
-###2.3
-# Makes a copy of a text file
+###2.2
+# Writes Seven Wonders of the World to a file
 #
+seven_wonders = [
+   "Great Wall of China",
+   "Petra",
+   "Christ the Redeemer",
+   "Machu Picchu",
+   "Chichen Itza",
+   "Roman Colosseum",
+   "Taj Mahal"
+]
 
-# file names
-original_file = 'healthy_lifestyle.txt'
-target_file = 'copy_healthy_lifestyle.txt'
+# Name of the file to write to
+file_name = 'seven_wonders.txt'
 
-# read the content of the original file
-with open(original_file) as file:
-   content = ... .read()
-...
-...
+# Sort data alphabetically
+seven_wonders.sort()
 
-# write the content to the target file (copy)
-with ... as ...:
-   ... .write(...)
+# Write data to the file
+with open(file_name, 'w') as file:
+   for item in seven_wonders:
+      file.write(item + '\n')

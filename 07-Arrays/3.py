@@ -29,15 +29,52 @@
 
 ##3.4
 
-arr = [-15, 8,-31,47,-2,19]
+# arr = [-15, 8,-31,47,-2,19]
 
-max_num = arr[0]
-min_num = arr[0]
+# max_num = arr[0]
+# min_num = arr[0]
 
-for n in arr:
-    if n > max_num:
-        max_num =n
-    if n<min_num:
-        min_num = n
-print (max_num)
-print (min_num)
+# for n in arr:
+#     if n > max_num:
+#         max_num =n
+#     if n<min_num:
+#         min_num = n
+# print (max_num)
+# print (min_num)
+
+
+###3.5
+# arr = [1,2,3,4,5]
+
+# print(arr)
+# arr[0] -=1
+# print(arr)
+# arr[-1] +=4
+# print(arr)
+# arr[2] *=2
+# print(arr)
+
+###3.6
+
+# Returns the name of the day of the week for a given day number (1-Monday ... 7-Sunday)
+#
+
+# def weekday(n):
+#     weekdays = ["Monday", "Tuesday", "Wednesday",
+#          "Thursday", "Friday", "Saturday", "Sunday"]
+#     return weekdays[n]
+
+# print(weekday(0))
+# print(weekday(3)) 
+# print(weekday(6)) 
+
+### 3.7
+# Prints shopping list
+#
+# shopping_list = [
+#    "milk", "bread", "eggs", "butter", "cheese",
+#    "tomatoes", "potatoes", "carrots", "onions", "garlic"
+# ]
+
+# for item in shopping_list:
+#    print(item)
