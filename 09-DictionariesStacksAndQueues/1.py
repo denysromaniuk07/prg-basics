@@ -119,10 +119,30 @@
 ###1.8
 
 price_list = {
-   'T-shirt': 19.99,
-   'Jeans': 49.99,
-   'Jacket': 89.99,
-   'Sneakers': 59.99,
-   'Hat': 15.99
+    'T-shirt': 19.99,
+    'Jeans': 49.99,
+    'Jacket': 89.99,
+    'Sneakers': 59.99,
+    'Hat': 15.99
 }
 
+
+print("Products and prices before the discount:")
+total_before_discount = 0
+for product, price in price_list.items():
+    print(f"{product}: ${price:.2f}")
+    total_before_discount += price
+
+print(f"Total value before discount: ${total_before_discount:.2f}")
+
+
+discounted_price_list = {product: round(price * 0.90, 2) for product, price in price_list.items()}
+
+
+print("\nProducts and prices after the 10% discount:")
+total_after_discount = 0
+for product, price in discounted_price_list.items():
+    print(f"{product}: ${price:.2f}")
+    total_after_discount += price
+
+print(f"Total value after discount: ${total_after_discount:.2f}")
