@@ -81,10 +81,10 @@
 
 ### 7.10
 
-# import random
-# # COMPUTER TURN
-# computer = random.randint(1, 6)
-# # YOUR TURN
-# you = input("Enter: ")
-# guesed = you == computer
-# print(f'You won: {guesed}')
+import random
+# COMPUTER TURN
+computer = random.randint(1, 6)
+# YOUR TURN
+you = input("Enter: ")
+guesed = you == computer
+print(f'You won: {guesed}')
