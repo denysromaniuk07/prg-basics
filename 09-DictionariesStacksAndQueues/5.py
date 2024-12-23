@@ -125,5 +125,35 @@
 
 ###5.9
 
-  
-    
+# file_name_vehicle = 'vehicle.txt'
+# file_name_province = 'province.csv'
+
+# with open(file_name_vehicle, 'r', encoding='utf-8') as file:
+#     car_plates = file.readlines()
+
+# numbers_data = [line.strip() for line in car_plates]
+
+# regions_dict = {}
+
+# with open(file_name_province, 'r', encoding='utf-8') as file:
+#     for line in file:
+#         letter, name = line.strip().split(',')
+#         regions_dict[letter] = name
+
+# car_count_by_province = {region: 0 for region in regions_dict.values()}
+
+
+# for plate in car_plates:
+#     province_code = plate[0]
+#     if province_code in regions_dict:
+#         province_name = regions_dict[province_code]
+#         car_count_by_province[province_name] += 1
+        
+        
+# for province, count in car_count_by_province.items():
+#     print(f"{province}: {count} cars")
+
+
+
+
+
